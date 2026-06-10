@@ -1,0 +1,23 @@
+{
+  "name": "brooklet-ro-duties-experience",
+  "description": "Draft the Proposed Duties and Relevant Industry Experience sections of an SFC licence application (Form 6 / RO experience description) for Brooklet Advisory cases. Follows the SOP V3 five-step workflow from material screening through final .docx output.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Brooklet Advisory Limited",
+    "url": "https://github.com/BrookletAdvisory"
+  },
+  "homepage": "https://github.com/BrookletAdvisory/brooklet-ro-duties-experience",
+  "repository": "https://github.com/BrookletAdvisory/brooklet-ro-duties-experience",
+  "license": "MIT",
+  "keywords": [
+    "sfc",
+    "form-6",
+    "responsible-officer",
+    "duties",
+    "experience",
+    "hong-kong",
+    "compliance",
+    "licensing",
+    "regulated-activity"
+  ]
+}
