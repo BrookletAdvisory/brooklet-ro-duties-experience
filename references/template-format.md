@@ -1,7 +1,8 @@
 # Template 段落順序 / 標題格式 / 排版規則
 
 > 原始模板：`assets/duties-experience-template.docx`
-> **格式、段落順序、標題層級全部照 Template；不借舊版的結構。**
+> 實際參考範例：`Licence Application_Duties and Experience of RO_WONG Shui Lun, William.docx`、`Licence Application_Duties and Experience of RO_HUI Tin Kay V2.docx`
+> **格式、段落順序、標題層級全部照範例；不借舊版的結構。**
 
 ---
 
@@ -9,60 +10,113 @@
 
 ```
 RO APPLICANT – FULL NAME
+Proposed Job Title: Responsible Officer (Type X & Type Y)
 
-Description of proposed job duties relating to the relevant regulated activity(ies)
+Proposed duties:
 
-Subject to the Commission's approval of [Mr./ Ms. Last Name] as a RO, his principal duties will include the following:
+Subject to the Commission's approval of [Mr./Ms. Last Name] as a RO, his/her principal duties will include the following:
 
-With regard to type (X) regulated activity:
-…
-…
+- [Bullet 1];
+- [Bullet 2];
+- ...
+- [Final bullet].
 
-Elaboration on relevant industry experience
+Relevant industry experience
 
-[Employment Period]    [Position]    [Name of Employer (SFC CE No. if applicable)]
+[Overview paragraph: 2-4 sentences summarising total years, core expertise, and headline achievements.]
 
-With regard to type (X) regulated activity:
-…
-…
-…
+[YYYY.MM – YYYY.MM]    [Position]    [Name of Employer (SFC CE No. if applicable)], [Location]
 
-With regard to type 9 regulated activity:
-…
-…
+[Optional: 1-2 sentence context paragraph about the firm and the candidate's role.]
+
+With regard to Type [X] & [Y] regulated activities, the following experience is relevant:
+
+[Bold Sub-heading]: [Description of the relevant activity, ending with a qualitative statement];
+
+[Bold Sub-heading]: [Description];
+
+[Bold Sub-heading]: [Description. This demonstrates direct experience in ...].
 
 Fund under management: [Name of the Fund if known]
-Asset types and geographical coverage of the fund(s):
+Asset types and geographical coverage of the fund(s): [Description]
 Asset under management: approximately US$[XXX] million
-Team under management: approximately [XXX] persons during the tenure
+Team under management: approximately [X] to [X] persons during the tenure
 
-[Employment Period]    [Position]    [Name of Employer (SFC CE No. if applicable)]
-...
+[Repeat for each employment period]
+
+Relevant Management experience
+
+[Company] - managed [which teams/departments] with [X] subordinates[, additional context].
+[Company] - managed [which teams/departments] with [X] subordinates.
 ```
 
 ---
 
-## 標題格式規則
+## 各段格式詳解
 
-### 工作經歷段標題
-- 格式：`公司名（CE 號）— 職銜 — 年份 — 地點`
-- 同一段任職跨集團多主體時，每個主體單獨一行（見下方範例）
+### A. 標題行
+- 格式：`RO APPLICANT – FULL NAME`
+- 次行：`Proposed Job Title: Responsible Officer (Type X & Type Y)`
+- 全大寫、置頂
 
-### Type 標頭
-- 每段工作經歷開頭先標明 `With regard to type (X) regulated activity:`
-- 同一工作經歷同時關聯多個 Type 時，**分開兩個標頭**，每個 Type 各自列 bullet：
+### B. Proposed Duties 段
+- 標題：`Proposed duties:`
+- 開頭句：`Subject to the Commission's approval of [Mr./Ms. Last Name] as a RO, his/her principal duties will include the following:`
+- **Duties 是單一 flat bullet list，不按 Type 分節**。所有 Type 4 和 Type 9 的 duties 混在一個列表裡
+- 每個 bullet 以 `- ` 開頭，分號 `;` 結尾；最後一條以句號 `.` 結尾
+- 5-8 個 bullets
+- 動詞用現在分詞（Leading / Overseeing / Participating in）
 
-```
-With regard to type 4 regulated activity:
-- ...
+### C. Relevant Industry Experience 段
+- 標題：`Relevant industry experience`
+- **不需要** "Elaboration on" 前綴
 
-With regard to type 9 regulated activity:
-- ...
-```
+### D. Overview 導言段（Experience 下第一段）
+- 第一句：`[Mr./Ms. Last Name] is a seasoned financial services professional with over [X] years of experience in [relevant fields].`
+- 第二/三句：點出核心賣點（AUM 規模、多次成功申牌、跨境市場經驗等）
+- 不要太長，2-4 句即可
 
-### 加粗小標題（每段工作經歷內部）
-- 重要 bullet 加粗體小標題，後接冒號 + 動作描述
-- 例：`Fund Management: ...` / `Investment Analysis: ...` / `Research Compliance: ...`
+### E. 工作經歷段標題
+- 格式：`[YYYY.MM – YYYY.MM]    [Position]    [Name of Employer (SFC CE No. if applicable)], [Location]`
+- 日期用 `YYYY.MM` 格式，`–` 前後各一個空格（或用 `-` 代替，見 formatting skill 規則）
+- 職位和公司名之間用多個空格（tab-style）分隔
+- 同一公司如有多個職位/部門，可用多行標題或合併描述
+
+### F. 可選：公司/角色背景段
+- 在工作經歷標題後、Type bullet 前，可加 1-2 句描述該公司和候選人在其中的角色
+
+### G. Type 標頭 + Experience Bullets
+- 格式：`With regard to Type [X] & [Y] regulated activities, the following experience is relevant:`
+- 如果同一段經歷同時關聯多個 Type，合併在一個標頭下（`Type 4 & 9`），不分開兩個標頭
+- **每個 bullet 以粗體小標題開頭**，格式：`[Bold Sub-heading]: [description];`
+- 小標題反映角色和動作（如 `Formulating Investment Guidelines:`、`Fixed Income Fund:`、`Operational and Risk Management Oversight:`）
+- **名字決定了 SFC 對她角色的第一印象**
+- 每個 bullet 結尾加分號；最後一條以句號結尾
+- 重要的 bullet 結尾加一句定性收尾句（不固定句式）：如 `This demonstrates direct experience in making and managing discretionary private equity investments.` 或 `This involved all aspects of fund structuring, launch, and management.`
+
+### H. Fund / AUM / Team 細節（每段經歷後）
+- 直接放在該段經歷的 bullets 之後，不用額外標題
+- 格式（每行單獨）：
+  ```
+  Fund under management: [Name of the Fund if known]
+  Asset types and geographical coverage of the fund(s): [Description]
+  Asset under management: approximately US$[XXX] million
+  Team under management: approximately [X] to [X] persons during the tenure
+  ```
+- 如果沒有基金（如只有 DA 專戶），`Fund under management` 可改為 `Discretionary accounts under management` 或省略
+- 不確定的數字標 `[TBC]`
+
+### I. Earlier / shorter experience（非核心經歷）
+- 非核心的早期經歷可簡短處理：幾行概述，不按完整 bullet 格式展開
+- 如果該經歷不是重點，可在段落末尾加 `[Note: this section is brief as the primary focus is the [Main Period], per Ben's direction.]`
+
+### J. Management Experience 段
+- 標題：`Relevant Management experience`
+- 格式：`[Company] - managed [which teams/departments] with [X] subordinates[, additional context].`
+- 每間公司一行
+- 不需要其他已在前面提過的無關信息
+- 數字必須具體
+- 不知道就標 `[TBC: headcount to confirm with RO]`
 
 ---
 
@@ -70,61 +124,55 @@ With regard to type 9 regulated activity:
 
 | 項目 | 規則 |
 |---|---|
-| 連字符 | 統一為 `–`（en dash），不用 `-` 或 `—` |
-| 空格 | 標題前後不留多餘空格；en dash 兩側各一個空格 |
-| 公司名稱 | 全文必須一致（尤其集團下多個主體時，動筆前根據 SFC Record 確認申請主體及法定名稱） |
-| CE 號 | 公司名後括號內，格式 `(CE No.)` 或 SFC Public Register 上的標準寫法 |
-| 日期 | `YYYY.MM – YYYY.MM`，月份補零（例：`2022.07 – 2025.12`）|
-| AUM | `approximately US$[XXX] million` 或 `approximately USD[XXX] million`，全文統一一種 |
+| 連字符 | 統一為 `-`（hyphen），不用 `–` 或 `—`（見 brooklet-word-document-style skill） |
+| 公司名稱 | 全文必須一致（尤其集團下多個主體時） |
+| CE 號 | 公司名後括號內，格式 `(CE No.)` |
+| 日期 | `YYYY.MM – YYYY.MM`（或 `YYYY.MM - YYYY.MM`），月份補零 |
+| AUM | `approximately US$[XXX] million`，全文統一一種貨幣格式 |
+| Bullet 結尾 | 分號 `;`，最後一條句號 `.` |
+| Bold sub-heading | 每個 experience bullet 以粗體標題開頭，後接冒號+空格+描述 |
 
 ---
 
-## 範例（節錄自原 Template）
+## 範例（節錄自 WONG Shui Lun, William 實際文檔）
 
 ```
-RO APPLICANT – Dr. Lin
+RO APPLICANT – WONG Shui Lun, William
+Proposed Job Title: Responsible Officer (Type 4 & Type 9)
 
-Proposed duties
+Proposed duties:
 
-Subject to the Commission's approval of Dr. Lin as a RO, his principal duties will include the following:
+Subject to the Commission's approval of Mr. Wong as a RO, his principal duties will include the following:
 
-- Participating in the Company's introducing agent activities, including liaising with execution brokers and VATPs and assisting in overseeing referral arrangements in accordance with regulatory requirements;
-- Leading the investment management function, including investment strategy formulation, asset allocation decisions, ongoing portfolio monitoring, and performance evaluation;
-- Leading investment and divestment decisions, ensuring consistency with investment objectives, offering documents, and applicable regulatory requirements;
-- Leading the implementation of risk management and compliance monitoring measures, including liquidity management, concentration monitoring, and compliance with investment and exposure limits;
-- Reviewing and approving periodic reports provided to investors and regulators, ensuring accuracy, transparency, and compliance with disclosure requirements;
-- Participating in the establishment and maintenance of the internal control, risk management, and compliance framework for the asset management business;
-- Participating in ensuring compliance with applicable regulatory requirements, including the Code of Conduct, the Fund Manager Code of Conduct, and internal compliance policies;
-- Participating in the oversight and implementation of policies and procedures relating to investment due diligence, execution, record keeping, conflicts of interest management, and safeguarding of client assets.
+- Leading the Company's Type 4 and Type 9 regulated activities, including securities advisory and asset management functions;
+- Leading investment strategy formulation, asset allocation, portfolio construction and ongoing portfolio monitoring for fund(s) under management;
+- Leading investment and divestment decisions in accordance with investment mandates, risk parameters and applicable regulatory requirements;
+- Leading risk management, including monitoring portfolio risk, concentration and exposure limits, and implementing control measures;
+- Overseeing compliance, AML/CTF, regulatory licensing, operational setup and ongoing regulatory matters relevant to the Company's regulated activities; and
+- Participating in the establishment and maintenance of the Company's internal control, compliance and operational framework for Type 4 and Type 9 activities.
 
 Relevant industry experience
 
-Dr. Lin has over 20 years of experience in global finance, quantitative investing, and cross-border capital markets, and held leadership roles in both public and private sectors.
+Mr. Wong is a seasoned financial services professional with over 20 years of experience in senior management roles within the asset management and securities industries. He has a proven track record of successfully obtaining and acting as a RO for Type 4 and Type 9 licenses across multiple SFC-licensed corporations.
 
-2022.07 – 2025.12    Chief Investment Officer    Micro Connect (H.K.) Investment Management Limited (BSG035)
-2024.01 – 2025.12    Partner                     Micro Connect Group
+September 2018 – March 2024    Executive Director / Responsible Officer / Board Member    AVICT Global Asset Management Limited (CE No.: BHF812), Hong Kong
 
-- Oversaw the firm's asset management business, overseeing the investment strategy, portfolio management, and fundraising initiatives for funds under management;
-- Acted as key decision maker in the process and responsible for designing investment strategy and making investment decision for funds under management;
-- Carried out regular reporting to funds' board of directors for corporate governance;
+With regard to Type 4 & 9 regulated activities, the following experience is relevant:
 
-Fund under management: Micro Connect Leadership Fund and Micro Connect Leadership Feeder Fund (Mutual funds registered under the Cayman Islands Monetary Authority)
-Asset types and geographical coverage of the fund(s): Cashflow-based investments, Greater China focused
-Asset under management: approximately US$160 million
-Team under management: approximately 7 to 20 persons during the tenure
+Formulating Investment Guidelines: Formulated the investment guidelines and mandate for the holding company's USD$350 million fixed income portfolio. This involved providing high-level advice on investment parameters, risk tolerance, and strategic asset allocation to guide the investment process;
 
-2015.06 – 2022.06    Responsible Officer; Managing Director    Goldstream Capital Management Ltd (AYU472)
+Fixed Income Fund: Managed a fixed income fund with a seeding of USD$350 million, and grew the AUM by 30% in 6 months;
 
-Dr. Lin started Goldstream Capital in 2015 as Hony Capital's public asset investment arm. In 2018, Goldstream Capital was spun off and became a listed company. Goldstream Capital is a multi-manager, multi-strategy and multi-asset investment manager. During Dr. Lin's tenure at Goldstream Capital, he developed the investment management business from ground up. He deployed various investment strategies including long-short equity, macro, fund of fund, equity long only, etc.
+Alternative Fund: Led teams to launch multiple funds, including the "Flying Shark" funds – a series of asset-backed securities (ABS) funds with underlying assets of vessels valued at over USD$540 million combined. This involved all aspects of fund structuring, launch, and management;
 
-Duties in the firm: Overall management of the platform, including managing the investment team, developing the investment management business, and deploying various investment strategies;
-Fund under management: various funds with different investment strategies including long-short equity, macro, fund of fund, equity long only, etc.
-Asset types and geographical coverage of the fund(s): Multiple strategies across equities, fixed income, derivatives, external funds, with regional allocation across Hong Kong, the United States, and mainland China
-Asset under management: approximately USD1 billion (at firm level); approximately USD480 million (the largest fund under management) (as at April 2021)
-Team under management: Dr. Lin's latest position was the CEO of the firm and managed over 20 staff.
+Operational and Risk Management Oversight: Managed and oversaw all operations, settlements, FRR monitoring, and AML/KYC procedures as the MIC of OMO and Risk Management, ensuring the firm's asset management activities were compliant and operationally robust.
 
-Management experience
-...
+Fund under management: Fixed income fund and ABS funds
+Asset types and geographical coverage of the fund(s): Fixed income and asset-backed securities
+Asset under management: approximately USD$1.2 billion
+Team under management: supervised a team of 6 from multiple internal departments.
+
+Relevant Management experience
+
+Please refer to the above.
 ```
-
-> ⚠️ 注意：原 Template 中存在涉及 "human and artificial intelligence" 的描述。Brooklet SOP 規定 **AI 敏感詞一律不提**，新撰寫的稿件絕對不要照抄此類措辭。
