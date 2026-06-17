@@ -162,6 +162,7 @@ Innovest Group (CE No. BLO233 and BGB564), Hong Kong
 | CE 號 | 公司名後括號內，格式 `(CE No.)` |
 | 日期 | `Month YYYY to Month YYYY`（如 `July 2007 to December 2024`），不用數字格式 |
 | AUM | `approximately US$[XXX] million`，全文統一一種貨幣格式 |
+| Bullet 縮排 | 使用 Word 內建 bullet 格式：abstractNum left=-360 hanging=360 + paragraph-level left=360 |
 | Bullet 結尾 | 分號 `;`，最後一條句號 `.` |
 | Bold sub-heading | 每個 experience bullet 以粗體標題開頭，後接冒號+空格+描述 |
 
