@@ -48,7 +48,7 @@ description: Draft the "Proposed Duties" and "Relevant Industry Experience" sect
 
 ## 五步工作流
 
-> 篩材料 (S1) → 問方向 (S2) → 起草 (S3) → Ben Review + 問細節 (S4) → 終稿 (S5)
+> 篩材料 (S1) → 問方向 (S2) → 起草 (S3) → AI 交叉驗證 (S3.5) → Ben Review + 問細節 (S4) → 終稿 (S5)
 >
 > **每一步驟都需要 human in the loop：每個數字，和每一版稿子。**
 
@@ -63,6 +63,7 @@ description: Draft the "Proposed Duties" and "Relevant Industry Experience" sect
 先確認新公司申請的 RA 類型（Type 1 / Type 4 / Type 9 等）和未來擬開展業務（hedge fund / PE / family office / discretionary AM 等），篩選標準從此刻起固定。
 
 - 同時申請多個 Type 時，每個 Type 都要有對應的 RO 過往經歷支撐，除非明確指示，否則不能混用。
+- **Type 4 / Type 9 Experience 是否分開寫？** 必須在 Step 1 向 Joyce/Ben 確認。**預設：分開**——`With regard to type 4 regulated activities, the following experience is relevant:` 和 `With regard to type 9 regulated activities, the following experience is relevant:` 各自獨立成段、各自列 bullets。只有在有特殊原因且 Joyce/Ben 明確指示時才合併為 `Type 4 & 9`。若未確認，一律按分開處理。
 
 **材料完整度等級：**
 
@@ -140,7 +141,7 @@ description: Draft the "Proposed Duties" and "Relevant Industry Experience" sect
 
 ### A. Proposed Duties 段
 
-- 參考 MIC 分工表，按 RO 實際負責的職能範疇寫，**5–7 條即可**
+- 參考 MIC 分工表，按 RO 實際負責的職能範疇寫，**5-6 條短句即可**。每條控制在 1-2 行，不超過 30 個英文單詞。Duties 要虛（broad functional responsibilities），不要寫出具體的投資策略、產品名稱或流程細節。
 - 語氣寬泛：用 overseeing / leading / co-leading / participating in；**不需要有具體數字**
 - 參考同公司其他 RO 的 Duties 寫法保持一致性
 - **絕對不要把 Experience 裡的細節提前放進 Duties**
@@ -166,9 +167,9 @@ description: Draft the "Proposed Duties" and "Relevant Industry Experience" sect
 ### C. 每段工作經歷
 
 **格式要求**（嚴格照 `references/template-format.md`）：
-- 標題格式：公司名（CE 號）— 職銜 — 年份 — 地點
-- 每段開頭先標明 'With regard to type X regulated activity:' 或分開兩個標頭
-- 重要 bullet 加粗體小標題（Fund Management: / Investment Analysis: / Research Compliance:）
+- 標題格式：`[YYYY.MM - YYYY.MM]    [Position]    [Name of Employer (SFC CE No. if applicable)], [Location]`
+- Type 4 和 Type 9 的 experience **預設分開寫**（見 Step 1 確認結果）。各自以 `With regard to type 4 regulated activities, the following experience is relevant:` 和 `With regard to type 9 regulated activities, the following experience is relevant:` 開頭，各自單獨列 bullets
+- 重要 bullet 加粗體小標題（Investment Product Strategy and Distribution Leadership: / Investment Management Oversight: / Risk Management:）
 
 **小標題的命名原則**
 
@@ -206,6 +207,58 @@ Experience 部分的內容應盡量向申牌主體的未來業務方向靠攏。
 - 格式固定：公司名 — managed [XX] team with [X] direct subordinates
 - 數字必須具體；不需要其他已經在前面提過的無關信息
 - 不知道就標 `[TBC: headcount to confirm with RO]`
+
+---
+
+## STEP 3.5 | AI 交叉驗證（Fact-Check，獨立完成）
+
+**目標：在給人看之前，先用第二個 AI 核對所有可驗證的事實，消滅低級錯誤。**
+
+> ⚠️ **單一 AI 會偷懶或重複出錯而無法自查。** 此步驟強制要求用另一個 AI agent 獨立核對。
+
+### 必須核對的清單
+
+調用 `Agent` tool（subagent_type="general-purpose"），給它以下任務和原始材料：
+
+1. **日期核對**：將初稿中所有日期（任職起迄、RO 生效日、考試日期）與 SFC Public Register 記錄逐條對比。列出任何不一致。
+2. **RA Type 核對**：確認初稿中每個 RA type 的引用與 SFC 記錄一致。特別注意「1,4,9」還是「1,4,6」等容易混淆的組合。
+3. **公司名 + CE 號核對**：確認每個公司名和 CE 號與 SFC 記錄完全一致。
+4. **數字核對**：確認初稿中出現的數字（AUM、人數）有明確來源標記（[TBC] 或 [RO to confirm]）。未標記的數字必須有文件依據。
+5. **動詞一致性核對**：確認 Duties 段和 Experience 段的動詞使用與 RO 角色定位（Primary/Joint/Secondary）一致。
+
+### 執行方式
+
+```
+Agent(
+  subagent_type="general-purpose",
+  description="Fact-check D&E draft",
+  prompt="請核對以下 Duties & Experience 初稿中的所有事實，與原始 SFC 記錄和 CV 對比：
+  
+  [貼上初稿全文]
+  
+  原始材料：
+  - SFC Public Register: [貼上記錄]
+  - CV: [貼上關鍵段落]
+  
+  請產出核對報告，格式：
+  - 日期錯誤：[列出]
+  - RA type 錯誤：[列出]
+  - 公司名/CE 號不一致：[列出]
+  - 未標記數字：[列出]
+  - 動詞問題：[列出]
+  - 總體結論：通過 / 需修正"
+)
+```
+
+### 核對後的處理
+
+- 🔴 **事實錯誤**：直接在初稿中修正，不詢問
+- 🟡 **無法確定但可疑**：標記後在 Step 4 提交給 Joyce/Ben 時一併提出
+- ⚪ **一切正確**：在 Step 4 的確認訊息中加一句「已通過 AI 交叉驗證」
+
+### 完成條件
+
+核對報告顯示「通過」或所有 🔴 錯誤已修正後，方可進 Step 4。
 
 ---
 

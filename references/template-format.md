@@ -64,7 +64,7 @@ Relevant Management experience
 - 開頭句：`Subject to the Commission's approval of [Mr./Ms. Last Name] as a RO, his/her principal duties will include the following:`
 - **Duties 是單一 flat bullet list，不按 Type 分節**。所有 Type 4 和 Type 9 的 duties 混在一個列表裡
 - 每個 bullet 以 `- ` 開頭，分號 `;` 結尾；最後一條以句號 `.` 結尾
-- 5-8 個 bullets
+- 4-6 個 bullets
 - 動詞用現在分詞（Leading / Overseeing / Participating in）
 
 ### C. Relevant Industry Experience 段
@@ -77,7 +77,9 @@ Relevant Management experience
 - 不要太長，2-4 句即可
 
 ### E. 工作經歷段標題
-- 格式：`[YYYY.MM – YYYY.MM]    [Position]    [Name of Employer (SFC CE No. if applicable)], [Location]`
+- 格式：`[YYYY.MM – YYYY.MM]
+[Position]
+[Name of Employer (SFC CE No. if applicable)], [Location]`
 - 日期用 `YYYY.MM` 格式，`–` 前後各一個空格（或用 `-` 代替，見 formatting skill 規則）
 - 職位和公司名之間用多個空格（tab-style）分隔
 - 同一公司如有多個職位/部門，可用多行標題或合併描述
@@ -86,8 +88,15 @@ Relevant Management experience
 - 在工作經歷標題後、Type bullet 前，可加 1-2 句描述該公司和候選人在其中的角色
 
 ### G. Type 標頭 + Experience Bullets
-- 格式：`With regard to Type [X] & [Y] regulated activities, the following experience is relevant:`
-- 如果同一段經歷同時關聯多個 Type，合併在一個標頭下（`Type 4 & 9`），不分開兩個標頭
+- **預設分開寫：** Type 4 和 Type 9 各自獨立。格式：
+  ```
+  With regard to type 4 regulated activities, the following experience is relevant:
+  [Type 4 bullets...]
+
+  With regard to type 9 regulated activities, the following experience is relevant:
+  [Type 9 bullets...]
+  ```
+- **只有在 Joyce/Ben 明確指示合併時**才使用 `With regard to Type 4 & 9 regulated activities, the following experience is relevant:` 合併標頭。如未確認，一律分開處理。
 - **每個 bullet 以粗體小標題開頭**，格式：`[Bold Sub-heading]: [description];`
 - 小標題反映角色和動作（如 `Formulating Investment Guidelines:`、`Fixed Income Fund:`、`Operational and Risk Management Oversight:`）
 - **名字決定了 SFC 對她角色的第一印象**
