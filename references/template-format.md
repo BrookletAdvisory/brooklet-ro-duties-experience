@@ -77,12 +77,26 @@ Relevant Management experience
 - 不要太長，2-4 句即可
 
 ### E. 工作經歷段標題
-- 格式：`[YYYY.MM – YYYY.MM]
-[Position]
-[Name of Employer (SFC CE No. if applicable)], [Location]`
-- 日期用 `YYYY.MM` 格式，`–` 前後各一個空格（或用 `-` 代替，見 formatting skill 規則）
-- 職位和公司名之間用多個空格（tab-style）分隔
-- 同一公司如有多個職位/部門，可用多行標題或合併描述
+
+**標準格式（單一公司、單一牌照類型）：**
+```
+[YYYY.MM - YYYY.MM]    [Position]    [Name of Employer (SFC CE No. if applicable)], [Location]
+```
+
+**特殊格式（同一集團下持有多個牌照、跨越多個持牌主體）：**
+> [WARNING] 必須先在 Step 1 向用戶確認是否採用此格式。這是特殊情況處理。
+
+集團總體標題行後，逐個 Type 列出期間、角色（LR/RO）、和持牌主體：
+```
+[集團總任期]    [集團層級職位]    [集團控股公司名], [Location]
+
+Type [X] LR & RO: [開始] - [結束] ([持牌主體名], CE No. [XXX]; [持牌主體名], CE No. [XXX])
+Type [Y] RO: [開始] - [結束] ([持牌主體名], CE No. [XXX])
+```
+
+- 同一 Type 下若先為 LR 後升 RO（時間連續），合併為一行：`Type X LR & RO: [日期區間]`
+- 若 LR 和 RO 時間不連續（中間有中斷），則分兩行列出
+- 同一集團下多個持牌主體時，括號內以分號分隔各主體名和 CE 號
 
 ### F. 可選：公司/角色背景段
 - 在工作經歷標題後、Type bullet 前，可加 1-2 句描述該公司和候選人在其中的角色
