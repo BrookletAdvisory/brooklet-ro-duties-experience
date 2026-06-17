@@ -63,7 +63,7 @@ Relevant Management experience
 - 標題：`Proposed duties:`
 - 開頭句：`Subject to the Commission's approval of [Mr./Ms. Last Name] as a RO, his/her principal duties will include the following:`
 - **Duties 是單一 flat bullet list，不按 Type 分節**。所有 Type 4 和 Type 9 的 duties 混在一個列表裡
-- 每個 bullet 以 `- ` 開頭，分號 `;` 結尾；最後一條以句號 `.` 結尾
+- 每個 bullet 使用 `ListBullet` + 內建 bullet numbering（`NUM`），分號 `;` 結尾；最後一條以句號 `.` 結尾
 - 4-6 個 bullets
 - 動詞用現在分詞（Leading / Overseeing / Participating in）
 
@@ -76,28 +76,38 @@ Relevant Management experience
 - 第二/三句：點出核心賣點（AUM 規模、多次成功申牌、跨境市場經驗等）
 - 不要太長，2-4 句即可
 
-### E. 工作經歷段標題
+### E. 工作經歷段標題（Job Header）
 
-**標準格式（單一公司、單一牌照類型）：**
+**格式：多行粗體，每項資訊獨立換行。**
+
+一般情況（單一公司）：
 ```
-[YYYY.MM - YYYY.MM]    [Position]    [Name of Employer (SFC CE No. if applicable)], [Location]
-```
-
-**特殊格式（同一集團下持有多個牌照、跨越多個持牌主體）：**
-> [WARNING] 必須先在 Step 1 向用戶確認是否採用此格式。這是特殊情況處理。
-
-集團總體標題行後，逐個 Type 列出期間、角色（LR/RO）、和持牌主體：
-```
-[集團總任期]    [集團層級職位]    [集團控股公司名], [Location]
-
-Type [X] LR & RO: [開始] - [結束] ([持牌主體名], CE No. [XXX]; [持牌主體名], CE No. [XXX])
-Type [Y] RO: [開始] - [結束] ([持牌主體名], CE No. [XXX])
+July 2007 to December 2024
+Deputy Chief Executive Officer; Executive Director
+Type 4 RO: June 2010 to December 2024
+Type 9 LR & RO: November 2008 to December 2024
+BOCOM International Holdings Company Limited (3329.HK), Hong Kong
 ```
 
-- 同一 Type 下若先為 LR 後升 RO（時間連續），合併為一行：`Type X LR & RO: [日期區間]`
-- 若 LR 和 RO 時間不連續（中間有中斷），則分兩行列出
-- 同一集團下多個持牌主體時，括號內以分號分隔各主體名和 CE 號
+規則：
+- 第一行：日期（`Month YYYY to Month YYYY` 格式），粗體
+- 第二行：職位，粗體。如有多個職位以 `;` 分隔
+- 第三行起：Type-line。每個相關 RA type 一行，格式 `Type [X] [Role]: [Month YYYY to Month YYYY]`，粗體。同一 Type 下 LR 和 RO 時間連續則合併為 `LR & RO`
+- 最後一行：公司名（+ CE 號，如有）+ 地點，粗體
+- **Type-line 不重複公司名**：一般情況下 Type-line 對應的公司就是最後一行的公司，不需在 Type-line 括號內重複。只有當集團多牌且 Type-line 對應的持牌主體與主公司不同時，才在括號內標明：`Type X RO: [日期] ([持牌主體], CE No. [XXX])`
 
+特殊情況（集團多牌，須先在 Step 1 確認）：
+```
+March 2020 to October 2022
+Managing Director
+Type 4 LR & RO: April 2020 to October 2022 (Subsidiary A, CE No. XXX)
+Type 9 LR: February 2021 to October 2022 (Subsidiary B, CE No. YYY)
+Innovest Group (CE No. BLO233 and BGB564), Hong Kong
+```
+
+- 集團多牌時，Type-line 括號內標明不同的持牌主體及 CE 號，以分號分隔
+- 同一 Type 下 LR 和 RO 時間連續則合併為一行 `Type X LR & RO: [日期區間]`
+- 時間不連續則分兩行
 ### F. 可選：公司/角色背景段
 - 在工作經歷標題後、Type bullet 前，可加 1-2 句描述該公司和候選人在其中的角色
 
@@ -111,7 +121,7 @@ Type [Y] RO: [開始] - [結束] ([持牌主體名], CE No. [XXX])
   [Type 9 bullets...]
   ```
 - **只有在 Joyce/Ben 明確指示合併時**才使用 `With regard to Type 4 & 9 regulated activities, the following experience is relevant:` 合併標頭。如未確認，一律分開處理。
-- **每個 bullet 以粗體小標題開頭**，格式：`[Bold Sub-heading]: [description];`
+- **每個 bullet 以粗體小標題開頭**，格式：`[Bold Sub-heading]: [description];`。使用 `ListBullet` + 內建 bullet numbering（`NUM`）
 - 小標題反映角色和動作（如 `Formulating Investment Guidelines:`、`Fixed Income Fund:`、`Operational and Risk Management Oversight:`）
 - **名字決定了 SFC 對她角色的第一印象**
 - 每個 bullet 結尾加分號；最後一條以句號結尾
@@ -150,7 +160,7 @@ Type [Y] RO: [開始] - [結束] ([持牌主體名], CE No. [XXX])
 | 連字符 | 統一為 `-`（hyphen），不用 `–` 或 `—`（見 brooklet-word-document-style skill） |
 | 公司名稱 | 全文必須一致（尤其集團下多個主體時） |
 | CE 號 | 公司名後括號內，格式 `(CE No.)` |
-| 日期 | `YYYY.MM – YYYY.MM`（或 `YYYY.MM - YYYY.MM`），月份補零 |
+| 日期 | `Month YYYY to Month YYYY`（如 `July 2007 to December 2024`），不用數字格式 |
 | AUM | `approximately US$[XXX] million`，全文統一一種貨幣格式 |
 | Bullet 結尾 | 分號 `;`，最後一條句號 `.` |
 | Bold sub-heading | 每個 experience bullet 以粗體標題開頭，後接冒號+空格+描述 |
